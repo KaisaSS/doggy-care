@@ -1,0 +1,75 @@
+form {
+  background: rgba(185, 185, 185, 0.3);
+  width: 65%;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 5px 50px;
+  text-align: left;
+}
+
+.service-option {
+  display: flex;
+  margin-left: 20px;
+}
+
+.radio-button {
+  margin: 0 30px 30px;
+  width: 25%;
+  display: flex;
+  align-items: baseline;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.input-field {
+  margin: 10px 20px;
+  display: grid;
+}
+
+label {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  margin: 20px 5px;
+  width: 90%;
+  padding: 12px 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(226, 244, 255, 0.726);
+}
+
+textarea {
+  height: 6rem;
+  resize: none;
+}
+
+input[type="number"],
+input[type="tel"] {
+  width: 50%;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+}
+
+.btn button {
+  margin: 10px auto 30px;
+  padding: 10px 15px;
+  background: rgb(0, 0, 100);
+  color: white;
+  font-size: 18px;
+}
+
+.btn button:active {
+  background: rgb(0, 32, 138);
+}
