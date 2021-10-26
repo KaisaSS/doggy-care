@@ -1,7 +1,14 @@
 import React from "react";
 
-const bookWalk = () => {
-  return <div></div>;
+const BookWalk = () => {
+  return (
+    <form>
+      <div className="title">
+        <h2>Walk</h2>
+      </div>
+      <div>calendar</div>
+    </form>
+  );
 };
 
-export default bookWalk;
+export default BookWalk;

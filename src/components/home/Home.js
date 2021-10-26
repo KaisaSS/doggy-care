@@ -1,12 +1,15 @@
 import React from "react";
 // Styles
 import "./home.css";
+import HomeAbout from "./HomeAbout";
+import Banner from "./Banner";
 
 const Home = () => {
   return (
     <div>
-      <div className="banner">
-        <div className="slogan">Caring for your pet when you can't</div>
+      <Banner />
+      <div className="container">
+        <HomeAbout />
       </div>
     </div>
   );
