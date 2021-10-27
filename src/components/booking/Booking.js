@@ -11,6 +11,9 @@ const Booking = () => {
 
   const handleChange = (e) => {
     setInput({ ...input, [e.target.id]: e.target.value });
+  };
+
+  const handleRadio = (e) => {
     setRadio({ [e.target.id]: true });
   };
 
@@ -30,11 +33,11 @@ const Booking = () => {
         <h2>Which service are you looking to book?</h2>
         <div className="service-option">
           <div className="radio-button">
-            <input type="radio" id="walks" name="service" value="walks" onChange={handleChange} required />
+            <input type="radio" id="walks" name="service" value="walks" onChange={handleRadio} required />
             <label htmlFor="walks"> Walk</label>
           </div>
           <div className="radio-button">
-            <input type="radio" id="daycare" name="service" value="daycare" onChange={handleChange} required />
+            <input type="radio" id="daycare" name="service" value="daycare" onChange={handleRadio} required />
             <label htmlFor="daycare"> Daycare</label>
           </div>
         </div>
@@ -42,7 +45,7 @@ const Booking = () => {
         <AboutYou handleChange={handleChange} />
         <AboutDog handleChange={handleChange} />
         <div className="btn">
-          <button>Book now!</button>
+          <button>Next</button>
         </div>
       </form>
     </div>

@@ -1,13 +1,11 @@
 import React from "react";
+import Calendar from "./Calendar";
 
 const BookWalk = () => {
   return (
-    <form>
-      <div className="title">
-        <h2>Walk</h2>
-      </div>
-      <div>calendar</div>
-    </form>
+    <div className="calendar-container">
+      <Calendar />
+    </div>
   );
 };
 

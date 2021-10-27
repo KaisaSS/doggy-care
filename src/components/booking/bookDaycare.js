@@ -2,12 +2,11 @@ import React from "react";
 
 const BookDaycare = () => {
   return (
-    <form>
-      <div className="title">
-        <h2>Daycare</h2>
-      </div>
-      <div>calendar</div>
-    </form>
+    <div className="calendar-container">
+      <p>To book daycare please contact:</p>
+      <p>phone</p>
+      <p>email</p>
+    </div>
   );
 };
 

@@ -60,3 +60,94 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+table {
+  margin: 15px auto;
+}
+
+tbody {
+  margin: auto;
+}
+
+.month-year {
+  font-size: 20px;
+}
+
+td,
+th {
+  height: 50px;
+  width: 50px;
+}
+
+td {
+  background: rgb(161, 209, 216);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+td:hover {
+  background: gold;
+}
+
+td:active {
+  background: goldenrod;
+}
+
+.today {
+  background: rgb(0, 162, 255);
+}
+
+.in-prev-month,
+.in-next-month {
+  color: rgb(43, 123, 129);
+  opacity: 0.3;
+}
+
+.calendar-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+
+.calendar-btn button {
+  padding: 5px 10px;
+  background: rgb(0, 0, 100);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.calendar-btn button:active {
+  background: rgb(0, 32, 138);
+}
+
+.time-slots {
+  margin: 20px;
+}
+
+.available-times {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(4, 50px);
+  grid-gap: 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-slot {
+  padding: 8px;
+  background: rgb(28, 178, 201);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slot:hover {
+  background: gold;
+}
+
+.time-slot:active {
+  background: goldenrod;
+}

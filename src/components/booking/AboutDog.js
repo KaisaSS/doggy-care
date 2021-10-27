@@ -17,6 +17,10 @@ const AboutDog = ({ handleChange }) => {
         <input type="text" id="dog-breed" onChange={handleChange} required />
       </div>
       <div className="input-field">
+        <label htmlFor="get-along">How does your dog get along with other animals?</label>
+        <textarea id="get-along" className="text-area" onChange={handleChange} required></textarea>
+      </div>
+      <div className="input-field">
         <label htmlFor="important">Important to know</label>
         <textarea id="important" className="text-area" onChange={handleChange} required></textarea>
       </div>
