@@ -1,0 +1,74 @@
+[
+  {
+    "day": "28-12-2021",
+    "time": {
+      "start": "7:00",
+      "end": "8:00"
+    },
+    "available": true
+  },
+  {
+    "day": "28-12-2021",
+    "time": {
+      "start": "8:00",
+      "end": "9:00"
+    },
+    "available": true
+  },
+  {
+    "day": "28-12-2021",
+    "time": {
+      "start": "9:00",
+      "end": "10:00"
+    },
+    "available": true
+  },
+  {
+    "day": "29-12-2021",
+    "time": {
+      "start": "8:00",
+      "end": "9:00"
+    },
+    "available": true
+  },
+  {
+    "day": "29-12-2021",
+    "time": {
+      "start": "9:00",
+      "end": "10:00"
+    },
+    "available": true
+  },
+  {
+    "day": "30-12-2021",
+    "time": {
+      "start": "8:00",
+      "end": "9:00"
+    },
+    "available": true
+  },
+  {
+    "day": "30-12-2021",
+    "time": {
+      "start": "9:00",
+      "end": "10:00"
+    },
+    "available": true
+  },
+  {
+    "day": "30-12-2021",
+    "time": {
+      "start": "10:00",
+      "end": "11:00"
+    },
+    "available": true
+  },
+  {
+    "day": "30-12-2021",
+    "time": {
+      "start": "11:00",
+      "end": "12:00"
+    },
+    "available": true
+  }
+]

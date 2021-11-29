@@ -1,0 +1,326 @@
+form {
+  background: rgba(185, 185, 185, 0.3);
+  width: 65%;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 5px 50px 30px;
+}
+
+.service-option {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+  height: 70px;
+}
+
+.radio-button {
+  margin: 0 30px;
+  width: 35%;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.input-field {
+  margin: 10px 20px;
+  display: grid;
+}
+
+label {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+input,
+textarea {
+  margin: 15px 5px;
+  padding: 10px 18px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(172, 222, 255, 0.205);
+}
+
+textarea {
+  height: 5rem;
+  resize: none;
+}
+
+input:valid,
+textarea:valid {
+  border: 1px solid rgb(0, 190, 0);
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.btn button {
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  background: rgb(0, 0, 100);
+  color: white;
+  font-size: 18px;
+}
+
+.btn button:active {
+  background: rgb(0, 32, 138);
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-container {
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+}
+
+.calendar-container p {
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.react-calendar {
+  font-size: 15px;
+}
+
+.react-calendar__tile {
+  font-size: 16px;
+}
+
+.react-calendar__navigation button {
+  font-size: 18px;
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.selected-date span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.time-slots {
+  margin: 20px;
+}
+
+.available-times {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-slot {
+  padding: 8px;
+  background: rgb(245, 254, 255);
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slot:hover {
+  background: rgb(0, 140, 255);
+}
+
+.time-slot:active {
+  background: rgb(0, 100, 214);
+}
+
+.time-selected {
+  background: rgb(0, 140, 255);
+}
+
+.no-available {
+  margin-top: 20px;
+  color: navy;
+}
+
+.daycare span {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-logo {
+  margin-right: 15px;
+}
+
+.error-container {
+  text-align: center;
+}
+
+.fa-exclamation-triangle {
+  margin: 30px;
+}
+
+.success-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.success-msg p {
+  margin: 0 10px;
+}
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  padding: 20px 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.booking-detail {
+  padding: 5px;
+  margin: 5px 0;
+  border-top: 1px solid black;
+}
+
+.booking-detail:first-of-type {
+  border-top: none;
+}
+
+.booking-detail h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.booking-detail span {
+  margin-left: 40px;
+}
+
+.selected-service {
+  display: flex;
+  align-items: baseline;
+}
+
+.booked-date {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.booked-time {
+  margin-left: 30px;
+}
+
+.booked-time span {
+  margin-left: 20px;
+}
+
+.submitted-detail {
+  display: flex;
+  align-items: baseline;
+  margin-left: 30px;
+}
+
+.submitted-detail p {
+  font-weight: bold;
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.return-home {
+  text-align: right;
+  margin: 30px;
+}
+
+/* Media Queries for mobile */
+@media only screen and (max-width: 700px) {
+  form {
+    width: 100vw;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+
+  .service-option {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .form-head {
+    font-size: 23px;
+    padding: 20px 35px 0 20px;
+  }
+
+  input,
+  textarea {
+    margin: 10px 0px;
+  }
+
+  .btn button {
+    margin: 20px;
+  }
+
+  .success-msg {
+    font-size: 12px;
+  }
+
+  .booking-details {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .submitted-detail {
+    margin-left: 10px;
+  }
+
+  .booked-time {
+    margin-left: 20px;
+  }
+
+  .booking-detail h2 {
+    font-size: 18px;
+  }
+
+  .submitted-detail p {
+    width: 50px;
+  }
+}
