@@ -14,7 +14,7 @@ nav {
 }
 
 .nav-link {
-  margin-right: 30px;
+  margin-right: 25px;
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -28,6 +28,45 @@ nav {
   margin-left: 20px;
 }
 
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+  list-style: none;
+}
+
+.dropdown-menu {
+  width: 150px;
+  position: absolute;
+  top: 53px;
+  right: 160px;
+  list-style: none;
+  text-align: start;
+}
+
+.dropdown-menu li {
+  background: black;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.dropdown-menu li:hover {
+  background: rgb(87, 87, 87);
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-link {
     margin-right: 10px;
@@ -36,5 +75,11 @@ nav {
 
   .logo {
     font-size: 10px;
+  }
+
+  .dropdown-menu {
+    font-size: 15px;
+    width: 120px;
+    right: 110px;
   }
 }

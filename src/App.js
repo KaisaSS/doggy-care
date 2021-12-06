@@ -6,6 +6,8 @@ import About from "./components/about/About";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/navbar/ScrollToTop";
+import PriceList from "./components/about/PriceList";
+import Services from "./components/about/Services";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/booking" component={Booking} />
             <Route path="/about" component={About} />
+            <Route path="/services" component={Services} />
+            <Route path="/pricelist" component={PriceList} />
             <Route path="/contact" component={Contact} />
           </Switch>
         </div>

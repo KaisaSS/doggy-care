@@ -69,11 +69,23 @@ const Booking = () => {
             <h2 className="form-head">Which service are you looking to book?</h2>
             <div className="service-option">
               <div className="radio-button">
-                <input type="radio" id="walk" name="service" value="walk" onChange={handleRadio} required />
+                <input
+                  type="radio"
+                  id="walk"
+                  name="service"
+                  value="walk"
+                  onChange={handleRadio}
+                  required />
                 <label htmlFor="walk"> Walk</label>
               </div>
               <div className="radio-button">
-                <input type="radio" id="daycare" name="service" value="daycare" onChange={handleRadio} required />
+                <input
+                  type="radio"
+                  id="daycare"
+                  name="service"
+                  value="daycare"
+                  onChange={handleRadio}
+                  required />
                 <label htmlFor="daycare"> Daycare</label>
               </div>
               <div className="radio-button">
