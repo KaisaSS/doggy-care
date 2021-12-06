@@ -31,12 +31,11 @@ nav {
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  grid-gap: 5px;
   list-style: none;
 }
 
 .dropdown-menu {
-  width: 150px;
+  width: 140px;
   position: absolute;
   top: 53px;
   right: 160px;
