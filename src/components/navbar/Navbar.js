@@ -5,12 +5,11 @@ import Dropdown from "./Dropdown";
 import "./navbar.css";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
-  const closeMenu = () => setDropdown(!dropdown);
+  const toggleMenu = () => setDropdown(!dropdown);
 
-  const onMouseEnter = () => {
+  const openMenu = () => {
     setDropdown(true);
   };
 
@@ -25,7 +24,7 @@ const Navbar = () => {
         <NavLink to="/" className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link" onMouseEnter={onMouseEnter} onClick={closeMenu}>
+        <NavLink to="/about" className="nav-link" onMouseEnter={openMenu} onClick={toggleMenu}>
           About {window.innerWidth > 600 ? <i className="fas fa-caret-down" /> : <></>}
         </NavLink>
         {dropdown && <Dropdown setDropdown={setDropdown} />}

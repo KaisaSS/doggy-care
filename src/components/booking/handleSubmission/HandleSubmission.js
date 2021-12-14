@@ -12,9 +12,6 @@ const HandleSubmission = ({ submissionData, bookingEmail }) => {
     setFormResponse(sendBooking(submissionData));
   }, [submissionData]);
 
-  console.log(submissionData);
-  console.log(formResponse);
-
   return (
     <div>
       {formResponse === undefined ? (

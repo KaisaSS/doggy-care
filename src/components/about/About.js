@@ -1,8 +1,6 @@
 import React from "react";
 import "./about.css";
 import { Link } from "react-router-dom";
-import PriceList from "./PriceList";
-import Services from "./Services";
 
 const About = () => {
   return (
@@ -42,6 +40,7 @@ const About = () => {
           Prices are listed on our <Link to="/pricelist">Pricelist</Link>
         </p>
       </div>
+      <br />
       <div className="text-box">
         <h2>Interested?</h2>
         <p>
